@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aiko Weather</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <main class="weather-shell">
+    <section class="copy">
+      <p class="eyebrow">Aiko Weather</p>
+      <h1>Ask the sky without losing your calm.</h1>
+      <p>Open-Meteo powered, with a mock fallback when the network decides to be theatrical.</p>
+    </section>
+    <section class="weather-card">
+      <form id="weatherForm" class="search">
+        <input id="cityInput" placeholder="Search city, e.g. Bogota" autocomplete="off" required>
+        <button type="submit">Search</button>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <article id="result" class="result" hidden></article>
+    </section>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
